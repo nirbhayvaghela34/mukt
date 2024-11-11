@@ -23,7 +23,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+            <a href="https://instagram.com/mukt.world" target="_blank" rel="noopener noreferrer" 
                className="hidden md:flex items-center gap-2 text-white hover:text-purple-500 transition-colors">
               <Instagram className="h-5 w-5" />
               <span>Follow Us</span>

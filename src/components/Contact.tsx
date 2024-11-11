@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import ContactForm from './UI/ContactForm';
 
 export default function Contact() {
   return (
@@ -30,11 +30,11 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
-                <p className="text-gray-400">rajanchauhan2505@gmail.com</p>
+                <p className="text-gray-400">Mukt.wd@gmail.com</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
+            {/* <div className="flex items-start gap-4">
               <div className="p-3 bg-purple-600 rounded-lg">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
@@ -42,40 +42,9 @@ export default function Contact() {
                 <h3 className="text-xl font-semibold text-white mb-2">Visit Us</h3>
                 <p className="text-gray-400">123 Creative Street, Digital City, DC 12345</p>
               </div>
-            </div>
+            </div> */}
           </div>
-
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
-              />
-            </div>
-            <input
-              type="text"
-              placeholder="Subject"
-              className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows={6}
-              className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all transform hover:scale-105"
-            >
-              <Send className="w-5 h-5" />
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>
