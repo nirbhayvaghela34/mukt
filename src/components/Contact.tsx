@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import ContactForm from './UI/ContactForm';
 
 export default function Contact() {
@@ -30,7 +30,7 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
-                <p className="text-gray-400">Mukt.wd@gmail.com</p>
+                <p className="text-gray-400">mukt.wd@gmail.com</p>
               </div>
             </div>
 
