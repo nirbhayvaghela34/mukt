@@ -3,10 +3,10 @@ import ContactForm from './UI/ContactForm';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section id="contact" className="font-secondary py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Get in Touch</h2>
+          <h2 className="font-primary text-4xl font-bold text-white mb-4">Get in Touch</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Ready to start your next project? Contact us for a free consultation
           </p>
@@ -19,7 +19,7 @@ export default function Contact() {
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Call Us</h3>
+                <h3 className="font-primarytext-xl font-semibold text-white mb-2">Call Us</h3>
                 <p className="text-gray-400">+91 99787 20108</p>
               </div>
             </div>
@@ -29,7 +29,7 @@ export default function Contact() {
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
+                <h3 className="font-primary text-xl font-semibold text-white mb-2">Email Us</h3>
                 <p className="text-gray-400">mukt.wd@gmail.com</p>
               </div>
             </div>

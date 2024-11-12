@@ -30,7 +30,7 @@ export default function Hero() {
         className="relative z-20 text-center px-4 max-w-5xl mx-auto"
       >
         <motion.h1 
-          className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+          className="font-primary text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -39,7 +39,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text"> Experiences</span>
         </motion.h1>
         <motion.p 
-          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
+          className="font-secondary text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -55,7 +55,7 @@ export default function Hero() {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center gap-2 transition-colors"
+            className="font-primary px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center gap-2 transition-colors"
           >
             <Play className="w-5 h-5" />
             Watch Showreel
@@ -63,9 +63,9 @@ export default function Hero() {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors backdrop-blur-sm"
+            className="font-primary px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-full transition-colors backdrop-blur-sm"
           >
-            Get Started
+           <a href="#contact">Get Started</a> 
           </motion.button>
         </motion.div>
       </motion.div>

@@ -62,7 +62,7 @@ const item = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-black">
+    <section id="services" className="font-secondary py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -91,7 +91,7 @@ export default function Services() {
               whileHover={{ scale: 1.05 }}
               className="p-6 rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 hover:from-purple-900 hover:to-purple-800 transition-all duration-300"
             >
-              <div className="text-purple-500 mb-4">{service.icon}</div>
+              <div className="font-primary text-purple-500 mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
               <p className="text-gray-400">{service.description}</p>
             </motion.div>

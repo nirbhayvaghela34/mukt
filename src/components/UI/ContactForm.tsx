@@ -1,31 +1,50 @@
-import { useRef, FormEvent } from "react";
+import { useRef, FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Send } from 'lucide-react';
-import emailConfig from '../../config/emailConfig.ts';
+import { Send } from "lucide-react";
+import emailConfig from "../../config/emailConfig.ts";
 
 const ContactForm: React.FC = () => {
-  // Define the type of the form reference
+  const [error, setError] = useState<string>('');
   const form = useRef<HTMLFormElement>(null);
+
+  const validatePhoneNumber = (phoneValue: string): boolean => {
+    // Check if the phone number contains only digits and is exactly 10 digits long
+    if (!/^\d{10}$/.test(phoneValue)) {
+      setError("Phone number must be exactly 10 digits.");
+      return false;
+    }
+    setError(""); // Clear the error if valid
+    return true;
+  };
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
+    const formData = e.target as HTMLFormElement;
+    const phoneValue = (formData.elements.namedItem("contact_number") as HTMLInputElement).value;
+
+    // Validate the phone number before proceeding
+    if (!validatePhoneNumber(phoneValue)) return;
+
+    // Proceed with email sending only if there is no error
     if (form.current) {
-      emailjs.sendForm(
-        emailConfig.emailJsServiceId,
-        emailConfig.emailJsTemplateId,
-        form.current,
-        emailConfig.emailJsPublicKey
-      ).then(
-        (result) => {
-          console.log('SUCCESS!', result.text);
-          alert('Message sent successfully!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          alert('Failed to send message. Please try again.');
-        }
-      );
+      emailjs
+        .sendForm(
+          emailConfig.emailJsServiceId,
+          emailConfig.emailJsTemplateId,
+          form.current,
+          emailConfig.emailJsPublicKey
+        )
+        .then(
+          (result) => {
+            console.log("SUCCESS!", result.text);
+            alert("Message sent successfully!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            alert("Failed to send message. Please try again.");
+          }
+        );
     }
   };
 
@@ -37,25 +56,32 @@ const ContactForm: React.FC = () => {
           name="from_name"
           placeholder="Your Name"
           className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+          required
         />
         <input
-          type="email"
-          name="from_email"
-          placeholder="Your Email"
+          type="text"
+          id="contact_number"
+          name="contact_number"
+          placeholder="Contact number"
+          maxLength={10} // Enforce max 10 digits
           className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+          required
         />
       </div>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
       <input
-        type="text"
-        name="service"
-        placeholder="Service"
+        type="email"
+        name="from_email"
+        placeholder="Your Email"
         className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+        required
       />
       <textarea
         name="message"
         placeholder="Your Message"
         rows={6}
         className="w-full px-4 py-3 bg-gray-900 text-white resize-none rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+        required
       ></textarea>
       <button
         type="submit"

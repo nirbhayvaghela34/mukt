@@ -14,11 +14,11 @@ export default function Navbar() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#home" className="text-white hover:text-purple-500 transition-colors px-3 py-2">Home</a>
-                <a href="#services" className="text-white hover:text-purple-500 transition-colors px-3 py-2">Services</a>
-                <a href="#portfolio" className="text-white hover:text-purple-500 transition-colors px-3 py-2">Portfolio</a>
-                <a href="#testimonials" className="text-white hover:text-purple-500 transition-colors px-3 py-2">Testimonials</a>
-                <a href="#contact" className="text-white hover:text-purple-500 transition-colors px-3 py-2">Contact</a>
+                <a href="#home" className="font-primary text-white hover:text-purple-500 transition-colors px-3 py-2">Home</a>
+                <a href="#services" className="font-primary text-white hover:text-purple-500 transition-colors px-3 py-2">Services</a>
+                <a href="#portfolio" className="font-primary text-white hover:text-purple-500 transition-colors px-3 py-2">Portfolio</a>
+                <a href="#testimonials" className="font-primary text-white hover:text-purple-500 transition-colors px-3 py-2">Testimonials</a>
+                <a href="#contact" className="font-primary text-white hover:text-purple-500 transition-colors px-3 py-2">Contact</a>
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function Navbar() {
             <a href="https://instagram.com/mukt.world" target="_blank" rel="noopener noreferrer" 
                className="hidden md:flex items-center gap-2 text-white hover:text-purple-500 transition-colors">
               <Instagram className="h-5 w-5" />
-              <span>Follow Us</span>
+              <span className='font-primary'>Follow Us</span>
             </a>
             <div className="md:hidden">
               <button

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Facebook, Instagram, Twitter, Youtube, Mail, Phone } from 'lucide-react';
+import { Facebook, Instagram,Youtube,Linkedin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
     { icon: Instagram, href: 'https://instagram.com/mukt.world', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'Youtube' },
+    { icon: Facebook, href: 'https://www.facebook.com/people/Mukt/61568525823660/?rdid=TAxueYWF4J03T8XU&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1D1vV5nmo9%2F', label: 'Facebook' },
+    { icon: Youtube, href: 'https://www.youtube.com/@MuktWorld', label: 'Youtube' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/muktworld/', label: 'Twitter' },
+
   ];
 
   const navLinks = [
@@ -17,7 +17,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-black  border-gray-100">
+    <footer className="font-secondary bg-gradient-to-b from-gray-900 to-black  border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-primary ont-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3">
               {navLinks.map(({ name, href }) => (
                 <li key={name}>
@@ -59,7 +59,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4">Our Services</h3>
+            <h3 className="font-primary ont-semibold mb-4">Our Services</h3>
             <ul className="space-y-3">
               {['Corporate Videos', 'Short Films', 'Aerial Videography', 'Music Videos', 'Event Coverage'].map((service) => (
                 <li key={service}>
@@ -76,7 +76,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold mb-4 pt-1">Contact Us</h3>
+            <h3 className="font-primary text-white font-semibold mb-4 pt-1">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-[#a855f7]" />
