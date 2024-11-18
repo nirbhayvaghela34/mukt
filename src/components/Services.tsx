@@ -5,24 +5,24 @@ import { Video, Camera, Airplay, Film, Music, Share2, Tv } from 'lucide-react';
 const services = [
   {
     icon: <Video className="w-8 h-8" />,
-    title: 'Corporate Videos',
+    title: 'Videography',
     description: 'Professional corporate videos that elevate your brand message'
   },
   {
     icon: <Camera className="w-8 h-8" />,
-    title: 'Short Films',
+    title: 'Photography',
     description: 'Compelling storytelling through cinematic short films'
   },
   {
-    icon: <Airplay className="w-8 h-8" />,
-    title: 'Aerial Videography',
-    description: 'Breathtaking aerial shots using state-of-the-art drones'
-  },  
-  {
     icon: <Film className="w-8 h-8" />,
-    title: 'Documentaries',
+    title: 'Post-production',
     description: 'In-depth documentaries that tell powerful stories'
   },
+  {
+    icon: <Airplay className="w-8 h-8" />,
+    title: 'Short Film',
+    description: 'Breathtaking aerial shots using state-of-the-art drones'
+  },  
   {
     icon: <Music className="w-8 h-8" />,
     title: 'Music Videos',
@@ -30,7 +30,7 @@ const services = [
   },
   {
     icon: <Camera className="w-8 h-8" />,
-    title: 'Event Coverage',
+    title: 'Documentaries',
     description: 'Comprehensive coverage of your special events'
   },  
   {
@@ -89,9 +89,9 @@ export default function Services() {
               key={index}
               variants={item}
               whileHover={{ scale: 1.05 }}
-              className="p-6 rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 hover:from-purple-900 hover:to-purple-800 transition-all duration-300"
+              className="p-6 rounded-xl bg-gradient-to-br from-gray-900 to-gray-800 hover:bg-secondary transition-all duration-300"
             >
-              <div className="font-primary text-purple-500 mb-4">{service.icon}</div>
+              <div className="font-primary text-secondary mb-4">{service.icon}</div>
               <h3 className="text-xl font-semibold text-white mb-2">{service.title}</h3>
               <p className="text-gray-400">{service.description}</p>
             </motion.div>

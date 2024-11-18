@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
           type="text"
           name="from_name"
           placeholder="Your Name"
-          className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+          className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-sebg-secondary"
           required
         />
         <input
@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
           name="contact_number"
           placeholder="Contact number"
           maxLength={10} // Enforce max 10 digits
-          className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+          className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-sebg-secondary"
           required
         />
       </div>
@@ -73,19 +73,19 @@ const ContactForm: React.FC = () => {
         type="email"
         name="from_email"
         placeholder="Your Email"
-        className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+        className="w-full px-4 py-3 bg-gray-900 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-sebg-secondary"
         required
       />
       <textarea
         name="message"
         placeholder="Your Message"
         rows={6}
-        className="w-full px-4 py-3 bg-gray-900 text-white resize-none rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+        className="w-full px-4 py-3 bg-gray-900 text-white resize-none rounded-lg focus:outline-none focus:ring-2 focus:ring-sebg-secondary"
         required
       ></textarea>
       <button
         type="submit"
-        className="w-full px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg flex items-center justify-center gap-2 transition-all transform hover:scale-105"
+        className="w-full px-8 py-4 bg-secondary hover:bg- text-white rounded-lg flex items-center justify-center gap-2 transition-all transform hover:scale-105"
       >
         <Send className="w-5 h-5" />
         Send Message

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const projects = [
   {
     title: 'Corporate Brand Film',
-    category: 'Corporate',
+    category: 'Photography',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800&h=600'
   },
   {
@@ -13,17 +13,17 @@ const projects = [
   },
   {
     title: 'Aerial City Tour',
-    category: 'Drone',
+    category: 'videography',
     image: 'https://images.unsplash.com/photo-1506974210756-8e1b8985d348?auto=format&fit=crop&q=80&w=800&h=600'
   },
   {
     title: 'Wedding Highlights',
-    category: 'Events',
+    category: 'Post-production',
     image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800&h=600'
   },
   {
     title: 'Social Media Campaign',
-    category: 'Social',
+    category: 'graphic design',
     image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=800&h=600'
   },
   {
@@ -59,7 +59,7 @@ export default function Portfolio() {
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full transition-all ${
                 activeCategory === category
-                  ? 'bg-purple-600 text-white'
+                  ? 'bg-secondary text-white'
                   : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
               }`}
             >

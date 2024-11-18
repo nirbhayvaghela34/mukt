@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-purple-600 rounded-lg">
+              <div className="p-3 bg-secondary rounded-lg">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -25,7 +25,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-purple-600 rounded-lg">
+              <div className="p-3 bg-secondary rounded-lg">
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -35,7 +35,7 @@ export default function Contact() {
             </div>
 
             {/* <div className="flex items-start gap-4">
-              <div className="p-3 bg-purple-600 rounded-lg">
+              <div className="p-3 bg-secondary rounded-lg">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <div>

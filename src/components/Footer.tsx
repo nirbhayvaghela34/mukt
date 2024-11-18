@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-[#a855f7]">mukt</h2>
+            <h2 className="text-2xl font-bold text-secondary">mukt</h2>
             <p className="text-gray-400">
               Bringing your vision to life through exceptional media production.
             </p>
@@ -31,7 +31,7 @@ const Footer = () => {
                 <a
                   key={label}
                   href={href}
-                  className="text-gray-400 hover:text-[#a855f7] transition-colors duration-300"
+                  className="text-gray-400 hover:text-secondary transition-colors duration-300"
                   aria-label={label}
                 >
                   <Icon size={20} />
@@ -48,7 +48,7 @@ const Footer = () => {
                 <li key={name}>
                   <a
                     href={href}
-                    className="text-gray-400 hover:text-[#a855f7] transition-colors duration-300"
+                    className="text-gray-400 hover:text-secondary transition-colors duration-300"
                   >
                     {name}
                   </a>
@@ -65,7 +65,7 @@ const Footer = () => {
                 <li key={service}>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-[#a855f7] transition-colors duration-300"
+                    className="text-gray-400 hover:text-secondary transition-colors duration-300"
                   >
                     {service}
                   </a>
@@ -79,14 +79,14 @@ const Footer = () => {
             <h3 className="font-primary text-white font-semibold mb-4 pt-1">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3">
-                <Mail size={18} className="text-[#a855f7]" />
-                <a href="mailto:contact@mukt.com" className="text-gray-400 hover:text-[#a855f7] transition-colors duration-300">
+                <Mail size={18} className="text-secondary" />
+                <a href="mailto:contact@mukt.com" className="text-gray-400 hover:text-secondary transition-colors duration-300">
                   mukt.wd@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone size={18} className="text-[#a855f7]" />
-                <a href="tel:+1234567890" className="text-gray-400 hover:text-[#a855f7] transition-colors duration-300">
+                <Phone size={18} className="text-secondary" />
+                <a href="tel:+1234567890" className="text-gray-400 hover:text-secondary transition-colors duration-300">
                   +91 99787 20108
                 </a>
               </li>

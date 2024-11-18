@@ -36,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           Crafting Digital
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text"> Experiences</span>
+          <span className="bg-gradient-to-r from-secondary to-pink-500 text-transparent bg-clip-text"> Experiences</span>
         </motion.h1>
         <motion.p 
           className="font-secondary text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto"
@@ -55,7 +55,7 @@ export default function Hero() {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="font-primary px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-full flex items-center justify-center gap-2 transition-colors"
+            className="font-primary px-8 py-4 bg-secondary  text-white rounded-full flex items-center justify-center gap-2 transition-colors"
           >
             <Play className="w-5 h-5" />
             Watch Showreel
